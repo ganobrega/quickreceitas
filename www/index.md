@@ -10,12 +10,15 @@ hero:
     - theme: brand
       text: Explorar Receitas
       link: /receitas
-    - theme: alt
-      text: Como Funciona
-      link: /como-funciona
+    # - theme: alt
+    #   text: Como Funciona
+    #   link: /como-funciona
     - theme: alt
       text: Github
       link: https://github.com/ganobrega/quickreceitas
+  image:
+    src: /banner.png
+    alt: QuickReceitas
 
 features:
   - title: Receitas Personalizadas

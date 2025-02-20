@@ -3,4 +3,9 @@
     --vp-c-brand-2: OrangeRed;
     --vp-c-brand-3: OrangeRed;
     --vp-c-brand-soft: OrangeRed;
+
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient( 120deg, #ED3731 30%, #FDB863 );
+    --vp-home-hero-image-background-image: linear-gradient( -45deg, #ED3731 50%, #FDB863 50% );
+    --vp-home-hero-image-filter: blur(100px) opacity(0.5)
   }

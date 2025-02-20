@@ -4,9 +4,12 @@
     "build": "dotenvx run -- vitepress build www",
     "preview": "dotenvx run -- vitepress preview www",
     "favicon": "cd assets && npx sharp-cli -i ./quickreceitas.svg -o ../www/public/favicon.ico",
-    "logo": "cd assets && npx sharp-cli -i ./quickreceitas.svg -o ../www/public/logo.png"
+    "logo": "cd assets && npx sharp-cli -i ./quickreceitas.svg -o ../www/public/logo.png",
+    "banner": "cd assets && npx sharp-cli -i ./quickreceitas.svg -o ../www/public/banner.png resize 512 512"
   },
   "devDependencies": {
+    "sharp": "^0.33.5",
+    "sharp-cli": "^5.1.0",
     "vitepress": "^1.6.3"
   },
   "dependencies": {
