@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "QuickReceitas",
   description: "Receitas bem elaboradas com IA para você não esquecer",
-  base: '/repo/',
+  // base: '/repo/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
