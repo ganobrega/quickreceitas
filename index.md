@@ -4,22 +4,25 @@ layout: home
 
 hero:
   name: "QuickReceitas"
-  text: "Receitas bem elaboradas com IA para você não esquecer"
-  tagline: My great project tagline
+  text: "Receitas inteligentes para seu dia a dia"
+  tagline: "Descubra, cozinhe e compartilhe receitas incríveis de forma simples"
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Explorar Receitas
+      link: /receitas
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Como Funciona
+      link: /como-funciona
+    - theme: alt
+      text: Github
+      link: https://github.com/ganobrega/quickreceitas.github.io
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Receitas Personalizadas
+    details: Encontre receitas adaptadas aos seus gostos, restrições alimentares e ingredientes disponíveis
+  - title: Instruções Detalhadas
+    details: Passo a passo claro com dicas, tempos de preparo e fotos para você não errar
+  - title: Comunidade Ativa
+    details: Compartilhe suas experiências, dicas e variações com outros amantes da culinária
 ---
 
