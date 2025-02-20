@@ -2,7 +2,9 @@
   "scripts": {
     "start": "dotenvx run -- vitepress dev www",
     "build": "dotenvx run -- vitepress build www",
-    "preview": "dotenvx run -- vitepress preview www"
+    "preview": "dotenvx run -- vitepress preview www",
+    "favicon": "cd assets && npx sharp-cli -i ./quickreceitas.svg -o ../www/public/favicon.ico",
+    "logo": "cd assets && npx sharp-cli -i ./quickreceitas.svg -o ../www/public/logo.png"
   },
   "devDependencies": {
     "vitepress": "^1.6.3"

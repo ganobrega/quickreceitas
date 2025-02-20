@@ -33,7 +33,7 @@ Este projeto é distribuído sob a licença MIT, permitindo que qualquer pessoa 
 
 ## Contato
 
-Para mais informações, sugestões ou dúvidas, crie uma issue no [GitHub](https://github.com/ganobrega/quickreceitas.github.io/issues)
+Para mais informações, sugestões ou dúvidas, crie uma issue no [GitHub](https://github.com/ganobrega/quickreceitas/issues)
 
 ## Dúvidas Frequentes
 

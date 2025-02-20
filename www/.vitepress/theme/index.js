@@ -1,5 +1,7 @@
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
+import './custom.css'
+
 import { clerkPlugin } from '@clerk/vue'
 import Clerk from './Clerk.vue'
 import Favorite from './Favorite.vue'

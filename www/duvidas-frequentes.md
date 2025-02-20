@@ -50,7 +50,7 @@ Não! Você pode contribuir de diversas formas:
 - Abra uma Issue no GitHub
 - Consulte nossa documentação
 - Participe das discussões nas Issues existentes
-- Entre em contato com a comunidade através das [Discussions](https://github.com/ganobrega/quickreceitas.github.io/discussions)
+- Entre em contato com a comunidade através das [Discussions](https://github.com/ganobrega/quickreceitas/discussions)
 
 ### Onde encontro a documentação?
 Toda nossa documentação está disponível no:

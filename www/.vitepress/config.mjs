@@ -1,25 +1,22 @@
 import { defineConfig } from 'vitepress'
-// import { clerkPlugin } from '@clerk/vue'
-
-// const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "QuickReceitas",
   description: "Receitas rápidas e fáceis de fazer",
+
+  head: [
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+  ],
   
-  // mpa: true,
   themeConfig: {
-
-    // logo: {
-    //   src: '/logo.png',
-    //   alt: 'QuickReceitas Logo'
-    // },
-
-
+    logo: {
+      src: '/logo.png',
+      alt: 'QuickReceitas Logo'
+    },
 
     editLink: {
-      pattern: 'https://github.com/ganobrega/quickreceitas.github.io/edit/main/docs/:path',
+      pattern: 'https://github.com/ganobrega/quickreceitas/edit/main/docs/:path',
       text: 'Edite esta página no GitHub'
     },
 
@@ -107,7 +104,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/ganobrega/quickreceitas.github.io' }
+      { icon: 'github', link: 'https://github.com/ganobrega/quickreceitas' }
     ]
   },
 })

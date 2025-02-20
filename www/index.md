@@ -15,7 +15,7 @@ hero:
       link: /como-funciona
     - theme: alt
       text: Github
-      link: https://github.com/ganobrega/quickreceitas.github.io
+      link: https://github.com/ganobrega/quickreceitas
 
 features:
   - title: Receitas Personalizadas
