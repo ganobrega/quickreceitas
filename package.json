@@ -1,13 +1,17 @@
 {
   "scripts": {
-    "start": "vitepress dev",
-    "build": "vitepress build",
-    "preview": "vitepress preview"
+    "start": "dotenvx run -- vitepress dev www",
+    "build": "dotenvx run -- vitepress build www",
+    "preview": "dotenvx run -- vitepress preview www"
   },
   "devDependencies": {
     "vitepress": "^1.6.3"
   },
   "dependencies": {
-    "@clerk/vue": "^1.2.1"
+    "@clerk/clerk-js": "^5.53.0",
+    "@clerk/vue": "^1.2.1",
+    "@dotenvx/dotenvx": "^1.36.0",
+    "@supabase/supabase-js": "^2.48.1",
+    "@types/vue": "^2.0.0"
   }
 }

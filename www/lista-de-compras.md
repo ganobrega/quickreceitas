@@ -5,7 +5,7 @@
 import { defineClientComponent } from 'vitepress'
 
 const ClientComp = defineClientComponent(() => {
-  return import('./__extends__/ListaDeCompras.vue')
+  return import('./.vitepress/theme/ListaDeCompras.vue')
 })
 </script>
 
