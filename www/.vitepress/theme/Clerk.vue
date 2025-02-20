@@ -5,7 +5,9 @@ import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/vue'
 <template>
   <div style="display: flex; margin-left: 10px;">
     <SignedOut>
-      <SignInButton />
+      <SignInButton>
+        <button>Entrar</button>
+      </SignInButton>
     </SignedOut>
     <SignedIn>
       <UserButton />
