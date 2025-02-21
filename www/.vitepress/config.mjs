@@ -32,7 +32,7 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/ganobrega/quickreceitas/edit/main/docs/:path',
+      pattern: 'https://github.com/ganobrega/quickreceitas/edit/main/www/:path',
       text: 'Edite esta página no GitHub'
     },
 
