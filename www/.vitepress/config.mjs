@@ -7,8 +7,42 @@ export default defineConfig({
 
   head: [
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    ['script', { src: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "qd4y5g3j4f");` }]
+    
+    // Microsoft Clarity
+    ['script', {}, `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "qd4y5g3j4f");`],
+
+    // Google Analytics
+    ['script', { 
+      src: 'https://www.googletagmanager.com/gtag/js?id=G-7EF2NVE4ZK',
+      async: true
+    }],
+    ['script', {}, `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7EF2NVE4ZK');`]
   ],
+
+  // plugins: [
+  //   {
+  //     name: 'inject-scripts',
+  //     transformIndexHtml() {
+  //       return [
+  //         {
+  //           tag: 'script',
+  //           children: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "qd4y5g3j4f");`
+  //         },
+  //         {
+  //           tag: 'script',
+  //           src: `https://www.googletagmanager.com/gtag/js?id=G-7EF2NVE4ZK`,
+  //         },
+  //         {
+  //           tag: 'script',
+  //           children: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-7EF2NVE4ZK');`
+  //         }
+  //       ]
+  //     }
+  //   }
+  // ],
   
   themeConfig: {
     logo: {
