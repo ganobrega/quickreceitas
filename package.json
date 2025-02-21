@@ -5,7 +5,7 @@
     "preview": "dotenvx run -- vitepress preview www",
     "favicon": "cd assets && npx sharp-cli -i ./quickreceitas.svg -o ../www/public/favicon.ico",
     "logo": "cd assets && npx sharp-cli -i ./quickreceitas.svg -o ../www/public/logo.png",
-    "banner": "cd assets && npx sharp-cli -i ./quickreceitas.svg -o ../www/public/banner.png -q 70 resize 513 513"
+    "banner": "cd assets && npx sharp-cli -i ./quickreceitas.svg -o ../www/public/banner.png -q 40 resize 380 380"
   },
   "devDependencies": {
     "sharp": "^0.33.5",
