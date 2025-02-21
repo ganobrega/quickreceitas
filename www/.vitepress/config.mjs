@@ -22,7 +22,7 @@ export default defineConfig({
       gtag('config', 'G-7EF2NVE4ZK');`]
   ],
 
-  base: '/',
+  base: '/quickreceitas/',
 
   // plugins: [
   //   {
