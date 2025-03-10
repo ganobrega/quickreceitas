@@ -1,5 +1,4 @@
 <div align="center">
-  <a href="https://quickreceitas.com.br" style="text-decoration: none;">
     <div style="background-color: #1B1F24; padding: 40px; border-radius: 16px; text-align: left; position: relative; display: flex; justify-content: space-between; align-items: center;">
       <div>
         <p style="color: white; font-size: 48px; margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">Quick Receitas</p>
@@ -7,7 +6,6 @@
       </div>
       <img src="assets/quickreceitas.svg" alt="QuickReceitas Icon" style="width: 100px; height: 100px;">
     </div></br></br>
-  </a>
 </div>
 
 <p>
