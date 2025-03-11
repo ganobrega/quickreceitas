@@ -20,6 +20,7 @@ hero:
     src: /images/banner.png
     alt: QuickReceitas
     fetchpriority: high
+    rel: preload
 
 features:
   - title: Receitas Personalizadas
