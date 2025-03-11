@@ -14,6 +14,8 @@
     "assets:logo": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/logo.png",
     "assets:banner": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/banner.png -q 40 resize 380 380",
     "assets:og-image": "npx sharp-cli -i ./assets/og-image.svg -o ./src/public/images/og-image.png -q 40 resize 800 420",
+    "assets:android-chrome-192x192": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/android-chrome-192x192.png -q 40 resize 192 192",
+    "assets:android-chrome-512x512": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/android-chrome-512x512.png -q 40 resize 512 512",
     "prepare": "husky"
   },
   "wireit": {
@@ -28,7 +30,9 @@
         "assets:favicon-16x16",
         "assets:logo",
         "assets:banner",
-        "assets:og-image"
+        "assets:og-image",
+        "assets:android-chrome-192x192",
+        "assets:android-chrome-512x512"
       ]
     },
     "build": {
@@ -37,6 +41,7 @@
     "preview": {
       "command": "dotenvx run -- vitepress preview",
       "dependencies": [
+        "assets",
         "build"
       ]
     },
