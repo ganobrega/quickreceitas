@@ -15,6 +15,8 @@ export default defineConfig({
 
   description: "Receitas rápidas e fáceis de fazer",
 
+  appearance: 'force-dark',
+
   srcDir: 'src',
   
   lang: 'pt-BR',
