@@ -2,6 +2,8 @@ import { h, defineAsyncComponent } from 'vue'
 
 import DefaultTheme from 'vitepress/theme'
 
+import LazyLoad from './components/LazyLoad.vue'
+
 import './custom.css'
 
 // Lazy load dos componentes
@@ -32,12 +34,14 @@ export default {
     // register your custom global components
     // app.component('Favorite', Favorite)
     // app.component('CookieAdvice', CookieAdvice)
+    app.component('LazyLoad', LazyLoad)
   },
   Layout() {
     return h(DefaultTheme.Layout, null, {
       // 'nav-bar-content-after': () => h(Clerk),
       // 'layout-bottom': () => h(CookieAdvice),
       // 'doc-before': () => h(Favorite)
+      'layout-bottom': () => h(LazyLoad)
     })
   }
 }

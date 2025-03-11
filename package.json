@@ -13,7 +13,8 @@
     "assets:favicon-32x32": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/favicon-32x32.png resize 32 32",
     "assets:favicon-16x16": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/favicon-16x16.png resize 16 16",
     "assets:logo": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/logo.png resize 36 36",
-    "assets:banner": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/banner.png -q 80 resize 380 380 -f webp",
+    "assets:banner-png": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/banner.png -q 80 resize 380 380",
+    "assets:banner-webp": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/banner.webp -q 80 resize 380 380 -f webp",
     "assets:og-image": "npx sharp-cli -i ./assets/og-image.svg -o ./src/public/images/og-image.png -q 40 resize 800 420",
     "assets:android-chrome-192x192": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/android-chrome-192x192.png -q 40 resize 192 192",
     "assets:android-chrome-512x512": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/android-chrome-512x512.png -q 40 resize 512 512"
@@ -29,7 +30,8 @@
         "assets:favicon-32x32",
         "assets:favicon-16x16",
         "assets:logo",
-        "assets:banner",
+        "assets:banner-png",
+        "assets:banner-webp",
         "assets:og-image",
         "assets:android-chrome-192x192",
         "assets:android-chrome-512x512"
@@ -73,6 +75,7 @@
     "@clerk/vue": "^1.2.1",
     "@dotenvx/dotenvx": "^1.36.0",
     "@supabase/supabase-js": "^2.48.1",
-    "markdown-it-link-attributes": "^4.0.1"
+    "markdown-it-link-attributes": "^4.0.1",
+    "vanilla-lazyload": "^19.1.3"
   }
 }

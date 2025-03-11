@@ -6,6 +6,9 @@ const hosts = {
   google: 'https://www.google.com',
   googleBr: 'https://www.google.com.br',
   cloudflareinsights: 'https://static.cloudflareinsights.com',
+  iconify: 'https://api.iconify.design',
+  
+  // jsdelivr: 'https://cdn.jsdelivr.net',
   // googleFonts: 'https://fonts.googleapis.com',
   // googleStatic: 'https://fonts.gstatic.com',
   // googleFontsCss2: 'https://fonts.googleapis.com/css2*'
