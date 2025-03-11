@@ -3,7 +3,7 @@ lastUpdated: false
 next: false
 ---
 
-<script setup>
+<!-- <script setup>
 import { defineClientComponent } from 'vitepress'
 
 const ClientComp = defineClientComponent(() => {
@@ -15,4 +15,4 @@ const ClientComp = defineClientComponent(() => {
 
 <ClientOnly>
   <ClientComp />
-</ClientOnly>
+</ClientOnly> -->

@@ -15,3 +15,5 @@
     }
     }
     ```
+
+- [ ] Add interaction with [@vueuse/gesture](https://github.com/vueuse/gesture)

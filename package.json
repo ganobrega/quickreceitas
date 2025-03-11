@@ -1,23 +1,75 @@
 {
   "version": "0.0.1",
+  "type": "module",
   "scripts": {
-    "start": "dotenvx run -- vitepress dev www",
-    "build": "dotenvx run -- vitepress build www",
-    "preview": "dotenvx run -- vitepress preview www",
-    "favicon": "cd assets && npx sharp-cli -i ./quickreceitas.svg -o ../www/public/favicon.ico",
-    "logo": "cd assets && npx sharp-cli -i ./quickreceitas.svg -o ../www/public/logo.png",
-    "banner": "cd assets && npx sharp-cli -i ./quickreceitas.svg -o ../www/public/banner.png -q 40 resize 380 380"
+    "start": "wireit",
+    "build": "wireit",
+    "preview": "wireit",
+    "assets": "wireit",
+    "test": "wireit",
+    "assets:favicon": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/favicon.ico",
+    "assets:apple-touch-icon": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/apple-touch-icon.png resize 180 180",
+    "assets:favicon-32x32": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/favicon-32x32.png resize 32 32",
+    "assets:favicon-16x16": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/favicon-16x16.png resize 16 16",
+    "assets:logo": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/logo.png",
+    "assets:banner": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/banner.png -q 40 resize 380 380",
+    "assets:og-image": "npx sharp-cli -i ./assets/og-image.svg -o ./src/public/images/og-image.png -q 40 resize 800 420",
+    "prepare": "husky"
+  },
+  "wireit": {
+    "test": {
+      "command": "echo 'test'"
+    },
+    "assets": {
+      "dependencies": [
+        "assets:favicon",
+        "assets:apple-touch-icon",
+        "assets:favicon-32x32",
+        "assets:favicon-16x16",
+        "assets:logo",
+        "assets:banner",
+        "assets:og-image"
+      ]
+    },
+    "build": {
+      "command": "dotenvx run -- vitepress build",
+      "dependencies": [
+        "assets"
+      ]
+    },
+    "preview": {
+      "command": "dotenvx run -- vitepress preview",
+      "dependencies": [
+        "build"
+      ]
+    },
+    "start": {
+      "command": "dotenvx run -- vitepress dev",
+      "dependencies": [
+        "assets"
+      ]
+    }
+  },
+  "lint-staged": {
+    "*.env": "npx dotenvx encrypt"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
+    "feed": "^4.2.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.3.3",
     "sharp": "^0.33.5",
     "sharp-cli": "^5.1.0",
-    "vitepress": "^1.6.3"
+    "vitepress": "^1.6.3",
+    "wireit": "^0.14.11"
   },
   "dependencies": {
     "@clerk/clerk-js": "^5.53.0",
     "@clerk/vue": "^1.2.1",
     "@dotenvx/dotenvx": "^1.36.0",
     "@supabase/supabase-js": "^2.48.1",
-    "@types/vue": "^2.0.0"
+    "@types/vue": "^2.0.0",
+    "markdown-it-link-attributes": "^4.0.1"
   }
 }

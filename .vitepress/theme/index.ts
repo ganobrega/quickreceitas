@@ -1,5 +1,7 @@
 import { h, defineAsyncComponent } from 'vue'
+
 import DefaultTheme from 'vitepress/theme'
+
 import './custom.css'
 
 // Lazy load dos componentes
@@ -20,7 +22,9 @@ import './custom.css'
 // }
 
 export default {
-  extends: DefaultTheme,
+  ...DefaultTheme,
+
+  
   async enhanceApp({ app }) {
     // Carrega o Clerk Plugin apenas quando necessário
     // await loadClerkPlugin(app)

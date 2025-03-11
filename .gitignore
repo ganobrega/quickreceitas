@@ -1,4 +1,9 @@
 node_modules
 **/.vitepress/cache
 **/.vitepress/dist
-.env*
+.env.keys
+.env.me
+.flaskenv*
+!.env.project
+!.env.vault
+.wireit

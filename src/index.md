@@ -17,7 +17,7 @@ hero:
       text: Github
       link: https://github.com/ganobrega/quickreceitas
   image:
-    src: /banner.png
+    src: /images/banner.png
     alt: QuickReceitas
 
 features:
