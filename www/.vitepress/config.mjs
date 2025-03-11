@@ -8,22 +8,41 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     
-    // Microsoft Clarity
-    ['script', {}, `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "qd4y5g3j4f");`],
+    // Microsoft Clarity - Otimizado
+    ['script', {
+      async: true,
+      defer: true
+    }, `
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;
+        t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "qd4y5g3j4f");
+    `],
 
-    // Google Analytics
+    // Google Analytics - Otimizado
     ['script', { 
       src: 'https://www.googletagmanager.com/gtag/js?id=G-7EF2NVE4ZK',
-      async: true
+      async: true,
+      defer: true
     }],
-    ['script', {}, `window.dataLayer = window.dataLayer || [];
+    ['script', {
+      async: true,
+      defer: true
+    }, `
+      window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-7EF2NVE4ZK');`]
+      gtag('config', 'G-7EF2NVE4ZK', {
+        'send_page_view': true,
+        'transport_type': 'beacon'
+      });
+    `]
   ],
 
   base: '/',
-  // base: '/quickreceitas/',
 
   themeConfig: {
     logo: {
@@ -34,6 +53,12 @@ export default defineConfig({
     editLink: {
       pattern: 'https://github.com/ganobrega/quickreceitas/edit/main/www/:path',
       text: 'Edite esta página no GitHub'
+    },
+
+    notFound: {
+      linkText: 'Voltar para a página inicial',
+      title: 'Página não encontrada',
+      quote: 'Mas se você não mudar de direção, e se você continuar olhando, você pode acabar onde você está indo.'
     },
 
     search: {
