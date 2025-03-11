@@ -25,7 +25,7 @@ export default defineConfig({
   
   themeConfig: theme,
   
-  useWebFonts: true,
+  // useWebFonts: true,
 
   lastUpdated: true,
 
@@ -41,7 +41,7 @@ export default defineConfig({
     build: {
       minify: 'terser',
       cssMinify: 'lightningcss',
-    }
+    },
   },
   
   // buildEnd: async (context) => {

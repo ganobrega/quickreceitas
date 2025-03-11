@@ -6,9 +6,9 @@ const hosts = {
   google: 'https://www.google.com',
   googleBr: 'https://www.google.com.br',
   cloudflareinsights: 'https://static.cloudflareinsights.com',
-  googleFonts: 'https://fonts.googleapis.com',
-  googleStatic: 'https://fonts.gstatic.com',
-  googleFontsCss2: 'https://fonts.googleapis.com/css2*'
+  // googleFonts: 'https://fonts.googleapis.com',
+  // googleStatic: 'https://fonts.gstatic.com',
+  // googleFontsCss2: 'https://fonts.googleapis.com/css2*'
 }
 
 const trustedHosts = Object.values(hosts).join(' ')
@@ -55,9 +55,9 @@ const head: HeadConfig[] = [
   
   ["link", { rel: "preconnect", href: hosts.cloudflareinsights }],
   ["link", { rel: "preconnect", href: hosts.tagManager }],
-  ["link", { rel: "preconnect", href: hosts.googleFonts }],
-  ["link", { rel: "preconnect", href: hosts.googleStatic }],
-  ["link", { rel: "preconnect", href: hosts.googleFontsCss2 }],
+  // ["link", { rel: "preconnect", href: hosts.googleFonts }],
+  // ["link", { rel: "preconnect", href: hosts.googleStatic }],
+  // ["link", { rel: "preconnect", href: hosts.googleFontsCss2 }],
   // ["link", { rel: "stylesheet", href: hosts.googleFontsInter }],
 
   [
