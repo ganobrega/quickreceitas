@@ -14,9 +14,15 @@ const head: HeadConfig[] = [
   ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
   ['meta', { name: 'twitter:site', content: '@quickreceitas' }],
   ['meta', { name: 'twitter:creator', content: '@quickreceitas' }],
+  ['meta', { name: 'twitter:image:width', content: '800' }],
+  ['meta', { name: 'twitter:image:height', content: '420' }],
 
   ['meta', { property: 'og:site_name', content: 'QuickReceitas' }],
   ['meta', { property: 'og:locale', content: 'pt_BR' }],
+  ['meta', { property: 'og:type', content: 'website' }],
+  ['meta', { property: 'og:image:width', content: '800' }],
+  ['meta', { property: 'og:image:height', content: '420' }],
+  ['meta', { property: 'og:image:type', content: 'image/png' }],
   ['meta', { property: 'og:image', content: `${process.env.VITE_BASE_URL}/images/og-image.png` }],
   ['script', { 
     src: 'https://www.googletagmanager.com/gtag/js?id=G-7EF2NVE4ZK',
