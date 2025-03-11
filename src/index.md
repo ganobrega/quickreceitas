@@ -20,6 +20,8 @@ hero:
     src: ""
     data-srcset: /images/banner.webp, /images/banner.png
     data-sizes: 100vw
+    loading: "lazy"
+    decoding: "async"
     alt: QuickReceitas
 
 features:
