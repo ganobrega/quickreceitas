@@ -5,6 +5,7 @@ const hosts = {
   tagManager: 'https://www.googletagmanager.com',
   google: 'https://www.google.com',
   googleBr: 'https://www.google.com.br',
+  doubleClick: 'https://stats.g.doubleclick.net',
   cloudflareinsights: 'https://static.cloudflareinsights.com',
   iconify: 'https://api.iconify.design',
   
@@ -58,24 +59,11 @@ const head: HeadConfig[] = [
   
   ["link", { rel: "preconnect", href: hosts.cloudflareinsights }],
   ["link", { rel: "preconnect", href: hosts.tagManager }],
+  ["link", { rel: "preconnect", href: hosts.doubleClick }],
   // ["link", { rel: "preconnect", href: hosts.googleFonts }],
   // ["link", { rel: "preconnect", href: hosts.googleStatic }],
   // ["link", { rel: "preconnect", href: hosts.googleFontsCss2 }],
   // ["link", { rel: "stylesheet", href: hosts.googleFontsInter }],
-
-  ["link", {
-    rel: "preload",
-    as: "image",
-    href: "/images/banner.webp",
-    type: "image/webp"
-  }],
-
-  ["link", {
-    rel: "preload",
-    as: "image",
-    href: "/images/banner.png",
-    type: "image/png"
-  }],
 
   [
     "link",
@@ -162,34 +150,34 @@ const head: HeadConfig[] = [
   ],
 
   // Scripts
-  [
-    "script",
-    {
-      src: "https://www.googletagmanager.com/gtag/js?id=G-7EF2NVE4ZK",
-      async: "true",
-      defer: "true",
-    },
-  ],
+  // [
+  //   "script",
+  //   {
+  //     src: "https://www.googletagmanager.com/gtag/js?id=G-7EF2NVE4ZK",
+  //     async: "true",
+  //     defer: "true",
+  //   },
+  // ],
 
-  [
-    "script",
-    {
-      async: "true",
-      defer: "true",
-    },
-    `
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-7EF2NVE4ZK', {
-      'send_page_view': true,
-      'transport_type': 'beacon',
-      'cookie_flags': 'SameSite=None;Secure;Partitioned;',
-      'anonymize_ip': true,
-      'cookie_domain': 'none'
-    });
-  `,
-  ],
+  // [
+  //   "script",
+  //   {
+  //     async: "true",
+  //     defer: "true",
+  //   },
+  //   `
+  //   window.dataLayer = window.dataLayer || [];
+  //   function gtag(){dataLayer.push(arguments);}
+  //   gtag('js', new Date());
+  //   gtag('config', 'G-7EF2NVE4ZK', {
+  //     'send_page_view': true,
+  //     'transport_type': 'beacon',
+  //     'cookie_flags': 'SameSite=None;Secure;Partitioned;',
+  //     'anonymize_ip': true,
+  //     'cookie_domain': 'none'
+  //   });
+  // `,
+  // ],
 ];
 
 export default head;
