@@ -32,10 +32,7 @@
       ]
     },
     "build": {
-      "command": "dotenvx run -- vitepress build",
-      "dependencies": [
-        "assets"
-      ]
+      "command": "dotenvx run -- vitepress build"
     },
     "preview": {
       "command": "dotenvx run -- vitepress preview",
