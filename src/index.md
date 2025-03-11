@@ -19,6 +19,7 @@ hero:
   image:
     src: /images/banner.svg
     width: 100%
+    height: 100%
     # data-srcset: /images/banner.webp, /images/banner.png
     # data-sizes: 100vw
     # loading: lazy
