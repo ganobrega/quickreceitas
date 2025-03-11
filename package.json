@@ -11,7 +11,7 @@
     "assets:apple-touch-icon": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/apple-touch-icon.png resize 180 180",
     "assets:favicon-32x32": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/favicon-32x32.png resize 32 32",
     "assets:favicon-16x16": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/favicon-16x16.png resize 16 16",
-    "assets:logo": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/logo.png",
+    "assets:logo": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/logo.png resize 36 36",
     "assets:banner": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/banner.png -q 40 resize 380 380",
     "assets:og-image": "npx sharp-cli -i ./assets/og-image.svg -o ./src/public/images/og-image.png -q 40 resize 800 420",
     "assets:android-chrome-192x192": "npx sharp-cli -i ./assets/quickreceitas.svg -o ./src/public/images/android-chrome-192x192.png -q 40 resize 192 192",
@@ -57,9 +57,11 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
+    "cssnano": "^7.0.6",
     "feed": "^4.2.2",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
+    "postcss": "^8.5.3",
     "prettier": "^3.3.3",
     "sharp": "^0.33.5",
     "sharp-cli": "^5.1.0",
@@ -72,5 +74,10 @@
     "@dotenvx/dotenvx": "^1.36.0",
     "@supabase/supabase-js": "^2.48.1",
     "markdown-it-link-attributes": "^4.0.1"
+  },
+  "postcss": {
+    "plugins": {
+      "cssnano": {}
+    }
   }
 }
