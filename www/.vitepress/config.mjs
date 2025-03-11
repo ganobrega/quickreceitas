@@ -7,22 +7,23 @@ export default defineConfig({
 
   head: [
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    ['meta', { content: 'Secure; SameSite=Strict; Partitioned;', name: 'cookie-policy' }],
     
     // Microsoft Clarity - Otimizado
-    ['script', {
-      async: true,
-      defer: true
-    }, `
-      (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;
-        t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];
-        y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "qd4y5g3j4f");
-    `],
+    // ['script', {
+    //   async: true,
+    //   defer: true
+    // }, `
+    //   (function(c,l,a,r,i,t,y){
+    //     c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    //     t=l.createElement(r);t.async=1;
+    //     t.src="https://www.clarity.ms/tag/"+i;
+    //     y=l.getElementsByTagName(r)[0];
+    //     y.parentNode.insertBefore(t,y);
+    //   })(window, document, "clarity", "script", "qd4y5g3j4f");
+    // `],
 
-    // Google Analytics - Otimizado
+    // Google Analytics - Updated for privacy and cookie-less tracking
     ['script', { 
       src: 'https://www.googletagmanager.com/gtag/js?id=G-7EF2NVE4ZK',
       async: true,
@@ -37,7 +38,10 @@ export default defineConfig({
       gtag('js', new Date());
       gtag('config', 'G-7EF2NVE4ZK', {
         'send_page_view': true,
-        'transport_type': 'beacon'
+        'transport_type': 'beacon',
+        'cookie_flags': 'SameSite=None;Secure;Partitioned;',
+        'anonymize_ip': true,
+        'cookie_domain': 'none'
       });
     `]
   ],
