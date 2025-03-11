@@ -1,3 +1,13 @@
+---
+next:
+  text: 'Avançado'
+  link: '/receitas/nivel/avancado'
+prev:
+  text: 'Iniciante'
+  link: '/receitas/nivel/iniciante'
+---
+
+
 # Receitas para Intermediários 🥄
 
 Bem-vindo à nossa seção de receitas para intermediários! Aqui você encontrará receitas mais complexas e desafiadoras, perfeitas para quem já tem experiência na cozinha.

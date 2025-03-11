@@ -1,4 +1,6 @@
 ---
+lastUpdated: false
+next: false
 ---
 
 <script setup>

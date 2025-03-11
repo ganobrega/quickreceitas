@@ -1,3 +1,10 @@
+---
+next: false
+prev:
+  text: 'Avançado'
+  link: '/receitas/nivel/avancado'
+---
+
 # Receitas para Chef 🍽️
 
 Bem-vindo à nossa seção de receitas para chef! Aqui você encontrará receitas complexas e desafiadoras, perfeitas para quem já tem experiência na cozinha.

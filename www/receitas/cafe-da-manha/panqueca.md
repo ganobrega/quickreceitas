@@ -1,34 +1,32 @@
-# Panqueca Simples 🥞
-> Sem açucar e sem fermento
+# Panqueca Fina Estilo Crepe 🥞
+> Versão individual inspirada na crepioca
 
 ## Ingredientes
-- 1 xícara de farinha de trigo integral (ou farinha de aveia)
-- 1 xícara de leite
 - 1 ovo
+- 3 colheres de sopa de farinha de trigo
+- 3 colheres de sopa de leite
 - Pitada de sal
 - Óleo de coco para untar (ou manteiga)
 
 ## Modo de Preparo
-1. Em uma tigela, bata bem o ovo
+1. Bata muito bem o ovo até ficar espumoso
 2. Adicione o leite e continue batendo
-3. Aos poucos, adicione a farinha e o sal, mexendo até obter uma massa lisa
-4. Deixe a massa descansar por 10 minutos (isso ajuda a farinha a hidratar melhor)
-5. Aqueça uma frigideira antiaderente em fogo médio-baixo
-6. Unte levemente com óleo de coco
-7. Coloque uma concha fina de massa
-8. Quando a superfície começar a secar, vire a panqueca
-9. Doure o outro lado e retire
+3. Aos poucos, adicione a farinha e o sal, batendo até obter uma massa bem lisa
+4. Aqueça uma frigideira antiaderente em fogo médio
+5. Unte levemente com óleo de coco
+6. Despeje toda a massa e gire a frigideira imediatamente para espalhar bem fino
+7. Quando as bordas começarem a dourar e soltar (cerca de 1 minuto), vire
+8. Doure o outro lado rapidamente (30 segundos) e retire
 
 ## Dicas
-- A massa deve ficar bem líquida, como um caldo
-- Quanto mais fina a camada de massa, mais crocante fica
-- Mantenha fogo médio-baixo
-- Sirva com:
-  * Frutas frescas
-  * Banana amassada
-  * Mel
-  * Ovos mexidos e abacate (versão salgada)
+- A massa deve ficar bem líquida, quase como água
+- Quanto mais fina espalhar, mais crocante fica
+- Sirva imediatamente para manter a crocância
+- Sugestões de recheio:
+  * Versão salgada: queijo, presunto, frango desfiado
+  * Versão doce: chocolate, banana, morangos
+  * Versão fit: ricota temperada, peito de peru, espinafre
 
-**Tempo de Preparo**: 20 minutos
-**Porções**: 4-6 panquecas
-**Nível de Dificuldade**: Fácil 
+**Tempo de Preparo**: 5 minutos
+**Porções**: 1 panqueca grande
+**Nível de Dificuldade**: Médio

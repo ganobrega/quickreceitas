@@ -5,6 +5,12 @@ export default defineConfig({
   title: "QuickReceitas",
   description: "Receitas rápidas e fáceis de fazer",
 
+  lastUpdated: true,
+
+  sitemap: {
+    hostname: 'https://quickreceitas.com.br',
+  },
+
   head: [
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     ['meta', { content: 'Secure; SameSite=Strict; Partitioned;', name: 'cookie-policy' }],
@@ -83,6 +89,14 @@ export default defineConfig({
       }
     },
 
+    lastUpdated: {
+      text: 'Atualizado em',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'medium'
+      }
+    },
+
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
@@ -150,6 +164,17 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ganobrega/quickreceitas' }
-    ]
+    ],
+
+    docFooter: {
+      prev: 'Pagina anterior',
+      next: 'Próxima página',
+    },
+
+    darkModeSwitchLabel: 'Modo Escuro',
+    lightModeSwitchTitle: 'Alterar para o modo claro',
+    darkModeSwitchTitle: 'Alterar para o modo escuro',
+    returnToTopLabel: 'Voltar para o topo',
+    
   },
 })

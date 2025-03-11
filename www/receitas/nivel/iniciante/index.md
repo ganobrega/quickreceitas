@@ -1,3 +1,12 @@
+---
+next:
+  text: 'Intermediário'
+  link: '/receitas/nivel/intermediario'
+prev:
+  text: 'Básico'
+  link: '/receitas/nivel/basico'
+---
+
 # Receitas para Iniciantes 🥄
 
 Bem-vindo à nossa seção de receitas para iniciantes! Aqui você encontrará receitas simples e práticas, perfeitas para quem está começando a aventura na cozinha.

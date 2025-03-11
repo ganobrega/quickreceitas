@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Permitir acesso específico ao Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Permitir acesso ao Google Images
+User-agent: Googlebot-Image
+Allow: /
+
+# Permitir acesso ao Google Mobile
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Taxa de rastreamento para evitar sobrecarga do servidor
+Crawl-delay: 10
+
+# Sitemap
+Sitemap: https://quickreceitas.com.br/sitemap.xml

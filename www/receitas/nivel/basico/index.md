@@ -1,3 +1,9 @@
+---
+next:
+  text: 'Iniciante'
+  link: '/receitas/nivel/iniciante'
+---
+
 # Receitas Básicas
 
 Aqui você encontrará receitas fundamentais que todo cozinheiro iniciante deve dominar. São preparações simples mas essenciais para desenvolver suas habilidades culinárias.
