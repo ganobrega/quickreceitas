@@ -63,6 +63,20 @@ const head: HeadConfig[] = [
   // ["link", { rel: "preconnect", href: hosts.googleFontsCss2 }],
   // ["link", { rel: "stylesheet", href: hosts.googleFontsInter }],
 
+  ["link", {
+    rel: "preload",
+    as: "image",
+    href: "/images/banner.webp",
+    type: "image/webp"
+  }],
+
+  ["link", {
+    rel: "preload",
+    as: "image",
+    href: "/images/banner.png",
+    type: "image/png"
+  }],
+
   [
     "link",
     {
