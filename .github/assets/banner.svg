@@ -1,0 +1,93 @@
+
+<svg fill="none" viewBox="0 0 830 265" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        .container {
+          font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica,
+            Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+          display: flex;
+          flex-direction: column;
+          height: 265px;
+          width: 100%;
+          margin: 0;
+          background: #111827;
+          border-radius: 12px;
+          color: white;
+          justify-content: space-between;
+          position: absolute;
+        }
+
+        h1 {
+          font-size: 52px;
+          line-height: 1;
+          margin: 0;
+          font-weight: 600;
+          letter-spacing: 1px;
+        }
+
+        p {
+          margin: 0;
+        }
+
+        .top {
+          margin-top: 40px;
+          margin-left: 40px;
+        }
+
+        .bottom {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 40px;
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+
+        .tagline {
+          margin-top: 16px;
+          color: #b8babe;
+          font-weight: 300;
+          font-size: 17px;
+        }
+
+        .emoji {
+          font-size: 80px;
+          margin-bottom: -20px;
+        }
+      </style>
+      <div class="container">
+        <div class="top">
+
+        </div>
+        <div class="bottom">
+          <div class="left">
+            <h1>QuickReceitas</h1>
+            <p class="tagline">Encontre e compartilhe receitas de forma rápida e intuitiva</p>
+          </div>
+          <div class="right">
+            <p class="emoji">
+              <svg width="85" height="86" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_533_27" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="1" y="2" width="22" height="20">
+<path d="M21 18V10H7V18C7 18.7956 7.31607 19.5587 7.87868 20.1213C8.44129 20.6839 9.20435 21 10 21H18C18.7956 21 19.5587 20.6839 20.1213 20.1213C20.6839 19.5587 21 18.7956 21 18Z" fill="#555555" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 10H22M9 4V6M14 3V6M19 4V6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</mask>
+<g mask="url(#mask0_533_27)">
+<path d="M0 0H24V24H0V0Z" fill="url(#paint0_linear_533_27)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_533_27" x1="0" y1="0" x2="28.9316" y2="13.1491" gradientUnits="userSpaceOnUse">
+<stop stop-color="#ED3731"/>
+<stop offset="1" stop-color="#FDB863"/>
+</linearGradient>
+</defs>
+</svg>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

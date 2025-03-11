@@ -1,12 +1,8 @@
-<div align="center">
-    <div style="background-color: #1B1F24; padding: 40px; border-radius: 16px; text-align: left; position: relative; display: flex; justify-content: space-between; align-items: center;">
-      <div>
-        <p style="color: white; font-size: 48px; margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">Quick Receitas</p>
-        <p style="color: #A3A7AB; margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">Encontre e compartilhe receitas de forma rápida e intuitiva</p>
-      </div>
-      <img src="assets/quickreceitas.svg" alt="QuickReceitas Icon" style="width: 100px; height: 100px;">
-    </div></br></br>
-</div>
+<a href="https://keystonejs.com/">
+  <img src="./.github/assets/banner.svg" alt="Keystone: The superpowered CMS for developers">
+  </br>
+  </br>
+</a>
 
 <p>
   <a aria-label="NPM version" href="">
