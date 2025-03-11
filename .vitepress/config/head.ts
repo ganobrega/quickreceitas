@@ -24,12 +24,15 @@ const head: HeadConfig[] = [
   ['meta', { name: 'twitter:image:height', content: '420' }],
 
   ['meta', { property: 'og:site_name', content: 'QuickReceitas' }],
+  ['meta', { property: 'og:description', content: 'Receitas rápidas e práticas para seu dia a dia' }],
+  ['meta', { property: 'og:url', content: `${process.env.VITE_BASE_URL}` }],
   ['meta', { property: 'og:locale', content: 'pt_BR' }],
   ['meta', { property: 'og:type', content: 'website' }],
   ['meta', { property: 'og:image:width', content: '800' }],
   ['meta', { property: 'og:image:height', content: '420' }],
   ['meta', { property: 'og:image:type', content: 'image/png' }],
-  ['meta', { property: 'og:image', content: `${process.env.VITE_BASE_URL}/images/og-image.png` }],
+  ['meta', { property: 'og:image:alt', content: 'QuickReceitas - Receitas práticas' }],
+  ['meta', { property: 'og:image', content: `${process.env.VITE_BASE_URL}/images/og-image.png?v=1` }],
   ['script', { 
     src: 'https://www.googletagmanager.com/gtag/js?id=G-7EF2NVE4ZK',
     async: 'true',
