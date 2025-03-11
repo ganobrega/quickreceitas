@@ -4,7 +4,11 @@ const hosts = {
   analytics: 'https://www.google-analytics.com',
   tagManager: 'https://www.googletagmanager.com',
   google: 'https://www.google.com',
-  googleBr: 'https://www.google.com.br'
+  googleBr: 'https://www.google.com.br',
+  cloudflareinsights: 'https://static.cloudflareinsights.com',
+  googleFonts: 'https://fonts.googleapis.com',
+  googleStatic: 'https://fonts.gstatic.com',
+  googleFontsCss2: 'https://fonts.googleapis.com/css2*'
 }
 
 const trustedHosts = Object.values(hosts).join(' ')
@@ -17,13 +21,13 @@ const csp = [
   "script-src 'self' 'unsafe-inline' 'unsafe-eval' 'unsafe-hashes' " + trustedHosts,
   
   // Styles - permitir inline styles
-  "style-src 'self' 'unsafe-inline'",
+  "style-src 'self' 'unsafe-inline' " + trustedHosts,
   
   // Images - permitir SVGs inline e data URLs
   "img-src 'self' data: blob: " + trustedHosts,
   
   // Fonts
-  "font-src 'self' data:",
+  "font-src 'self' data: " + trustedHosts,
   
   // Connect
   "connect-src 'self' " + trustedHosts,
@@ -48,7 +52,13 @@ const head: HeadConfig[] = [
   // Links
   ["link", { rel: "icon", type: "image/x-icon", href: "/images/favicon.ico" }],
   ["link", { rel: "manifest", href: "/manifest.json" }],
+  
+  ["link", { rel: "preconnect", href: hosts.cloudflareinsights }],
   ["link", { rel: "preconnect", href: hosts.tagManager }],
+  ["link", { rel: "preconnect", href: hosts.googleFonts }],
+  ["link", { rel: "preconnect", href: hosts.googleStatic }],
+  ["link", { rel: "preconnect", href: hosts.googleFontsCss2 }],
+  // ["link", { rel: "stylesheet", href: hosts.googleFontsInter }],
 
   [
     "link",
@@ -95,11 +105,11 @@ const head: HeadConfig[] = [
   ["meta", { name: "author", content: "Quick Receitas" }],
   ["meta", { name: "referrer", content: "no-referrer-when-downgrade" }],
   ["meta", { name: "application-name", content: "QuickReceitas" }],
-  ["meta", { name: "apple-mobile-web-app-title", content: "QuickReceitas" }],
-  ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+  ["meta", { name: "mobile-web-app-title", content: "QuickReceitas" }],
+  ["meta", { name: "mobile-web-app-capable", content: "yes" }],
   [
     "meta",
-    { name: "apple-mobile-web-app-status-bar-style", content: "default" },
+    { name: "mobile-web-app-status-bar-style", content: "default" },
   ],
 
   ["meta", { name: "twitter:card", content: "summary_large_image" }],

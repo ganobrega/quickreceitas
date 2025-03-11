@@ -12,19 +12,38 @@ import generateFeed from './hooks/generateFeed'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "QuickReceitas",
+
   description: "Receitas rápidas e fáceis de fazer",
+
   srcDir: 'src',
-  lastUpdated: true,
+  
   lang: 'pt-BR',
+  
   head,
+  
   base: '/',
+  
   themeConfig: theme,
+  
+  useWebFonts: true,
+
+  lastUpdated: true,
+
   sitemap: {
     hostname: process.env.VITE_BASE_URL as string,
   },
+
   transformHead: async (context) => (
     generateMeta(context, process.env.VITE_BASE_URL as string)
   ),
+
+  vite: {
+    build: {
+      minify: 'terser',
+      cssMinify: 'lightningcss',
+    }
+  },
+  
   // buildEnd: async (context) => {
   //   generateFeed(context, hostname)
   // },
