@@ -17,14 +17,12 @@ hero:
       text: Github
       link: https://github.com/ganobrega/quickreceitas
   image:
-    src: /images/banner.svg
+    src: /images/banner.webp
+    fetchpriority: high
+    alt: QuickReceitas
     width: 100%
     height: 100%
-    # data-srcset: /images/banner.webp, /images/banner.png
-    # data-sizes: 100vw
-    # loading: lazy
-    # decoding: async
-    # alt: QuickReceitas
+    # src: /images/banner.svg
 
 features:
   - title: Receitas Personalizadas
