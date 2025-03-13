@@ -8,7 +8,8 @@ const hosts = {
   doubleClick: 'https://stats.g.doubleclick.net',
   cloudflareinsights: 'https://static.cloudflareinsights.com',
   iconify: 'https://api.iconify.design',
-  
+  githubAvatar: 'https://github.com',
+  githubUserContent: 'https://avatars.githubusercontent.com',
   // jsdelivr: 'https://cdn.jsdelivr.net',
   // googleFonts: 'https://fonts.googleapis.com',
   // googleStatic: 'https://fonts.gstatic.com',

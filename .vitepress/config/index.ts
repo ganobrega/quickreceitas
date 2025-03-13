@@ -44,6 +44,14 @@ export default defineConfig({
       minify: 'terser',
       cssMinify: 'lightningcss',
     },
+    server: {
+      proxy: {
+        '/sitemap.xml': {
+          target: process.env.VITE_BASE_URL as string,
+          changeOrigin: true,
+        },
+      },
+    },
   },
   
   // buildEnd: async (context) => {

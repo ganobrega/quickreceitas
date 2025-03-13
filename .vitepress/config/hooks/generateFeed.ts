@@ -5,15 +5,15 @@ import { createContentLoader, type SiteConfig } from 'vitepress'
 
 async function generateFeed(config: SiteConfig, hostname: string) {
   const feed = new Feed({
-    title: 'Paul Laros',
-    description: 'Developer with a passion for writing clean and functional code, and bringing beautiful ideas to life',
+    title: 'Quick Receitas',
+    description: 'Receitas rápidas e fáceis',
     id: hostname,
     link: hostname,
-    language: 'en',
-    image: 'https://laros.io/images/paul-laros.jpg',
-    favicon: `${hostname}/favicon.ico`,
+    language: 'pt-BR',
+    image: 'https://quickreceitas.com.br/images/logo.png',
+    favicon: `${hostname}/images/favicon.ico`,
     copyright:
-      'Copyright (c) 2023-present, Paul Laros'
+      'Copyright (c) 2025-present, Quick Receitas'
   })
 
   const posts = await createContentLoader('../**/*.md', {

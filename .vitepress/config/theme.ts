@@ -46,7 +46,7 @@ const themeConfig: DefaultTheme.Config = {
   nav: [
     { text: "Home", link: "/" },
     { text: "Receitas", link: "/receitas/" },
-    // { text: "Lista de Compras", link: "/lista-de-compras" },
+    { text: "Patrocinadores", link: "/patrocinadores" },
     { text: "Sobre", link: "/sobre" },
   ],
 
